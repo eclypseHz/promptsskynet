@@ -56,7 +56,7 @@ module.exports = {
 
             status = "COMPLETO"
             if (status === "COMPLETO") {
-                const CHAT_ID = -3701920350
+                const CHAT_ID = 3701920350
 
                 const invite = await bot.createChatInviteLink(CHAT_ID, {
                     member_limit: 1
