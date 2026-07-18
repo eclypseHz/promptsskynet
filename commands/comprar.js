@@ -1,4 +1,5 @@
 const { showBuyMenu } = require("../flows/buy");
+const products = require("../produtos.json");
 
 module.exports = {
     name: "comprar",
