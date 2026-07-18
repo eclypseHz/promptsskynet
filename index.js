@@ -94,7 +94,7 @@ bot.on("callback_query", async query => {
 
 (async () => {
     try {
-        const chat = await bot.getChat(3701920350);
+        const chat = await bot.getChat(-1003701920350);
         console.log(chat);
     } catch (err) {
         console.error(err);
