@@ -2,9 +2,9 @@ module.exports = {
     name: "suporte",
     description: "Inicia o fluxo de suporte",
     
-    async execute(bot, query) {
+    async execute(bot, msg) {
         return await bot.sendMessage(
-            query.message.chat.id,
+            msg.message.chat.id,
             "Para falar com o suporte, entre em contato por: https://wa.me/5571997191030"
         );
     }
