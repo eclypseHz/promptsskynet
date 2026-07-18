@@ -92,5 +92,5 @@ bot.on("callback_query", async query => {
     }
 });
 
-const chat = await bot.getChat(-3701920350);
+const chat = bot.getChat(-3701920350);
 console.log(chat);
