@@ -30,7 +30,7 @@ module.exports = {
         console.log("QR Code URL:", qrCodeUrl);
         console.log("Copy-Paste Code:", copyPaste);
 
-        const expiresAt = new Date(Date.now() + 15 * 60 * 1000).toLocaleString("pt-BR");
+        const expiresAt = new Date(Date.now() + 15 * 60).toLocaleString("pt-BR");
 
         await bot.sendPhoto(
             query.message.chat.id,
@@ -69,7 +69,10 @@ module.exports = {
                 );
                 await bot.sendMessage(
                     query.message.chat.id,
-                    "Segue o link de **uso único** para acessar o grupo SKYNET:\n\n" + invite.invite_link
+                    "Segue o link de **uso único** para acessar o grupo SKYNET:\n\n" + invite.invite_link,
+                    {
+                        parse_mode: "HTML"
+                    }
                 );
             }
             tries++;
