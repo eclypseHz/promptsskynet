@@ -91,12 +91,3 @@ bot.on("callback_query", async query => {
         console.error(err);
     }
 });
-
-(async () => {
-    try {
-        const chat = await bot.getChat(-1003701920350);
-        console.log(chat);
-    } catch (err) {
-        console.error(err);
-    }
-})();
