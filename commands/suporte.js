@@ -4,7 +4,7 @@ module.exports = {
     
     async execute(bot, msg) {
         return await bot.sendMessage(
-            msg.message.chat.id,
+            msg.chat.id,
             "Para falar com o suporte, entre em contato por: https://wa.me/5571997191030"
         );
     }
