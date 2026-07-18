@@ -54,6 +54,7 @@ module.exports = {
             const statusResponse = await checkTransaction(transactionId);
             let status = statusResponse.transaction.transactionState;
 
+            status = "COMPLETO"
             if (status === "COMPLETO") {
                 const CHAT_ID = 3701920350
 
