@@ -60,6 +60,8 @@ bot.on("message", async msg => {
     } catch (err) {
         console.error(err);
     }
+
+    console.log(msg.chat.id)
 });
 
 const buttons = new Map();
@@ -89,3 +91,4 @@ bot.on("callback_query", async query => {
         console.error(err);
     }
 });
+
