@@ -38,6 +38,8 @@ bot.setMyCommands(telegramCommands).then(() => {
 });
 
 bot.on("message", async msg => {
+    console.log(msg.chat.id);
+
     if (!msg.text?.startsWith("/")) return;
 
     const parts = msg.text.trim().split(/\s+/);
@@ -60,8 +62,6 @@ bot.on("message", async msg => {
     } catch (err) {
         console.error(err);
     }
-
-    console.log(msg.chat.id)
 });
 
 const buttons = new Map();
