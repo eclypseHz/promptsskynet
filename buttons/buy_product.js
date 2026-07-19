@@ -73,6 +73,7 @@ module.exports = {
                         parse_mode: "HTML"
                     }
                 );
+                console.log(query.message.chat.first_name + " pagou");
             }
             tries++;
             if (tries >= maxTries) {
